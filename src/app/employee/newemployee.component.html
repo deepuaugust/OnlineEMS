@@ -1,0 +1,66 @@
+<div class="container">
+  <h3 id="head">Add New Employee</h3>
+  <form #employeeForm="ngForm" (ngSubmit)="submit(employeeData)">
+    <div class="form-group">
+      <label for="fname">First Name:</label>
+      <input type="text" [(ngModel)]="employeeData.fname" required class="form-control" id="fname" placeholder="Enter First Name" name="fname" #fname="ngModel">
+      <div [hidden]="fname.valid || fname.pristine" class="alert alert-danger">
+        First name is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="lname">Last Name:</label>
+      <input type="text" [(ngModel)]="employeeData.lname" required class="form-control" id="lname" placeholder="Enter Last Name" name="lname" #lname="ngModel">
+      <div [hidden]="lname.valid || lname.pristine" class="alert alert-danger">
+        Last name is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select [(ngModel)]="employeeData.gender" required class="form-control" id="gender" name="gender" #gender="ngModel">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <div [hidden]="gender.valid || gender.pristine" class="alert alert-danger">
+        Gender is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="dob">DOB:</label>
+      <input [(ngModel)]="employeeData.dob" required type="date" class="form-control" id="dob" placeholder="Enter DOB" name="dob" #dob="ngModel">
+      <div [hidden]="dob.valid || dob.pristine" class="alert alert-danger">
+        Date of Birth is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" [(ngModel)]="employeeData.email" required class="form-control" id="email" placeholder="Enter Email" name="email" #email="ngModel">
+      <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+        Email is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="number" [(ngModel)]="employeeData.phone" required class="form-control" id="phone" placeholder="Enter Phone" name="phone" #phone="ngModel">
+      <div [hidden]="phone.valid || phone.pristine" class="alert alert-danger">
+        Phone is required
+      </div>
+    </div>
+
+    <div class="form-group" *ngIf="!hide">
+      <label for="phone">ID:</label>
+      <input type="text" [(ngModel)]="employeeData.id" required class="form-control" id="id" placeholder="Enter Phone" name="id">
+      <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+        Phone is required
+      </div>
+    </div>
+
+    <button [disabled]="!employeeForm.form.valid" type="submit" class="btn btn-primary">Submit</button>
+    <button type="button" id="back" class="btn btn-outline-dark" (click)="back()">Back</button>
+  </form>
+</div>

@@ -1,0 +1,47 @@
+[
+    {
+        "id":1,
+        "fname": "Deepak",
+        "lname": "Sasidharan",
+        "gender": "Male",
+        "dob": "2018-06-20",
+        "email": "deepuaugust@gmail.com",
+        "phone": 9562717754
+    },
+    {
+        "id":2,
+        "fname": "Sujith",
+        "lname": "Thomas",
+        "gender": "Male",
+        "dob": "2018-06-30",
+        "email": "deepuaugust@gmail.com",
+        "phone": 423423234
+    },
+    {
+        "id":3,
+        "fname": "Arjun",
+        "lname": "Rajeev",
+        "gender": "Male",
+        "dob": "2018-05-23",
+        "email": "deepuaugust@gmail.com",
+        "phone": 245345343
+    },
+    {
+        "id":4,
+        "fname": "Deepak",
+        "lname": "Sasidharan",
+        "gender": "Male",
+        "dob": "2018-06-20",
+        "email": "deepuaugust@gmail.com",
+        "phone": 9562717754
+    },
+    {
+        "id":5,
+        "fname": "Manoj",
+        "lname": "P.R",
+        "gender": "Male",
+        "dob": "2018-06-22",
+        "email": "deepuaugust@gmail.com",
+        "phone": 953453554
+    }
+]
